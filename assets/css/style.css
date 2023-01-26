@@ -505,7 +505,8 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-#statview p{  
+
+#statview p {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
@@ -1303,7 +1304,7 @@ section {
   padding: calc(.5em + var(--s)) calc(.4em + var(--s));
   color: var(--color);
   --_p: var(--s);
-  background:conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
   transition: .3s linear, color 0s, background-color 0s;
   outline: var(--b) solid #0000;
   outline-offset: .6em;
@@ -1323,4 +1324,17 @@ section {
 .button-89:active {
   background: var(--color);
   color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0563bb;
+  outline: 1px solid #0563bb;
 }

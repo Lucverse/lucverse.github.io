@@ -456,7 +456,7 @@ section {
   border-radius: 0;
 }
 
-.skills .progress .skill {
+.skills .progress .skills-card {
   padding: 10px 0;
   margin: 0;
   text-transform: uppercase;
@@ -465,8 +465,10 @@ section {
   font-family: "Poppins", sans-serif;
   color: #45505b;
 }
-
-.skills .progress .skill .val {
+.skills-card{
+  display: flex;
+}
+.skills .progress .skills-card .val {
   float: right;
   font-style: normal;
 }

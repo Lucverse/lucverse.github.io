@@ -487,6 +487,14 @@ section {
 #contpic{
   width: 100%;
 }
+#statview{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+#statview p{
+  margin-top: 50px;
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/

@@ -498,12 +498,23 @@ section {
 }
 
 #contpic {
-  width: 90%;
+  width: 100%;
 }
 
 #statview {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+#statview p{  
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 50px;
 }
 
 @media screen and (max-width: 991px) {

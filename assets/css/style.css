@@ -485,12 +485,19 @@ section {
   padding: 50px;
 }
 #contpic{
-  width: 100%;
+  width: 90%;
 }
 #statview{
   display: grid;
   grid-template-columns: repeat(3,1fr);
 }
+@media screen and (max-width: 991px) {
+  #statview{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/

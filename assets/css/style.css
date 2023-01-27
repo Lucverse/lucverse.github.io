@@ -517,11 +517,18 @@ section {
   text-align: center;
   margin-top: 50px;
 }
+#statview > div{
+  height: 50%;
+  text-align: center;
+}
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1300px) {
   #statview {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  #statview > div > img{
+    width: 80%;
   }
 }
 

@@ -13,6 +13,36 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar1{
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  z-index: 99;
+  padding: 10px;
+  height: fixed;
+}
+.navbar1 a{
+  padding: 5px 10px ;
+  border-radius: 20px;
+}
+.navbar1 a:hover{
+  box-shadow: 0px 0 1px black;
+  color: #0563bb;
+}
+@media screen and (min-width: 990px) {
+  .navbar1{
+    display: flex;
+  }
+}
+@media screen and (max-width: 990px) {
+  .navbar1{
+    display: none;
+  }
+}
+
 h1,
 h2,
 h3,

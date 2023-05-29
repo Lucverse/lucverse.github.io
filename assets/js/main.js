@@ -212,12 +212,13 @@ document.addEventListener("scroll", () => {
   }
 })
 
-
 window.addEventListener("scroll", function() {
   var scrollY = window.scrollY;
-  if (scrollY >= 500) {
+  if (scrollY >= 500 && screen.width>=990 ) {
     document.getElementById("navbar1").style.display = "flex";
-  } else {
+  }
+   else {
     document.getElementById("navbar1").style.display = "none";
   }
 });
+

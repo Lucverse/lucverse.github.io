@@ -13,7 +13,7 @@ a:hover {
   text-decoration: none;
 }
 
-.navbar1{
+.navbar1 {
   width: 100%;
   background-color: white;
   position: fixed;
@@ -24,27 +24,33 @@ a:hover {
   padding: 10px;
   height: fixed;
 }
-.navbar1 a{
-  padding: 5px 10px ;
+
+.navbar1 a {
+  padding: 5px 10px;
   border-radius: 20px;
 }
-.navbar1 a:hover{
+
+.navbar1 a:hover {
   background-color: #0563bb;
   color: white;
 }
-body .navbar1{
+
+body .navbar1 {
   display: none;
 }
+
 @media screen and (min-width: 990px) {
-  .navbar1{
+  .navbar1 {
     display: flex;
   }
 }
+
 @media screen and (max-width: 990px) {
-  .navbar1{
+  .navbar1 {
     display: none;
   }
 }
+
 h1,
 h2,
 h3,
@@ -562,10 +568,12 @@ section {
     grid-template-columns: repeat(1, 1fr);
     margin-right: 0px;
   }
+
   #statview>div>img {
     width: 80%;
   }
 }
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -870,33 +878,40 @@ section {
   transition: ease-in-out 0.3s;
   position: relative;
 }
-.project-card{
+
+.project-card {
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
+
 .projects .icon-box .icon i {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
 }
-.project-card .icon img{
+
+.project-card .icon img {
   border-radius: 7px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.project-card .tech-stack{
+
+.project-card .tech-stack {
   padding-top: 20px;
   display: flex;
   justify-content: center;
-  gap: 5px ;
+  gap: 5px;
 }
+
 .project-card .tech-stack {
   display: flex;
   position: absolute;
 }
-.project-card .tech-stack i{
+
+.project-card .tech-stack i {
   display: flex;
   font-size: 27px;
 }
+
 .projects .icon-box .icon svg {
   position: absolute;
   top: 0;
@@ -1012,10 +1027,36 @@ section {
 
 .project-links a {
   padding-top: 20px;
+  position: relative;  
 }
 
 .project-links i {
   font-size: 35px;
+}
+
+.project-links a:hover {
+  transform: scale(1.1);
+}
+.project-github-link::after {
+  content: "Github";
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  text-align: center;
+  font-size: 12px;
+}
+.project-deployed-link::after {
+  content: "Deployed";
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 25px;
+  text-align: center;
+  font-size: 12px;
+}
+.project-github-link:hover::after, .project-deployed-link:hover::after{
+  display: block;
 }
 
 /*--------------------------------------------------------------

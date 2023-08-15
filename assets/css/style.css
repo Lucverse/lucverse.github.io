@@ -911,7 +911,6 @@ section {
   display: flex;
   font-size: 27px;
 }
-
 .projects .icon-box .icon svg {
   position: absolute;
   top: 0;
@@ -1021,13 +1020,14 @@ section {
   margin: auto;
   display: grid;
   width: 200px;
+  padding-bottom: 20px;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
 }
 
 .project-links a {
   padding-top: 20px;
-  position: relative;  
+  position: relative; 
 }
 
 .project-links i {

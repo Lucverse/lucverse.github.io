@@ -71,6 +71,7 @@ h6 {
   border-radius: 50px;
   transition: all 1s;
   padding-top: 10px;
+  opacity: 1;
 }
 
 .hidden {
@@ -204,7 +205,7 @@ h6 {
   color: #45505b;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 990px) {
 
   .nav-menu a,
   .nav-menu a:focus {
@@ -291,7 +292,7 @@ h6 {
   position: relative;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 990px) {
   #home {
     padding-left: 160px;
   }
@@ -344,7 +345,7 @@ h6 {
   color: #0563bb;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 990px) {
   #home {
     text-align: center;
   }
@@ -1136,7 +1137,7 @@ section {
   background-color: #0563bb;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 990px) {
   .testimonials .testimonial-item p {
     width: 80%;
   }
@@ -1439,4 +1440,27 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: #0563bb;
   outline: 1px solid #0563bb;
+}
+
+#download-resume{
+  position: relative;
+}
+#download-resume[title]:hover::before {
+  content: attr(title);
+  color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  top: 35px;
+  font-size: 15px;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+#download-resume[title]:hover::before {
+  opacity: 1;
+  color: #0563bb;
 }

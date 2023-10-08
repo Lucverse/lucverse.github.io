@@ -1,6 +1,10 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 a {
@@ -912,6 +916,7 @@ section {
   display: flex;
   font-size: 27px;
 }
+
 .projects .icon-box .icon svg {
   position: absolute;
   top: 0;
@@ -1028,7 +1033,7 @@ section {
 
 .project-links a {
   padding-top: 20px;
-  position: relative; 
+  position: relative;
 }
 
 .project-links i {
@@ -1038,6 +1043,7 @@ section {
 .project-links a:hover {
   transform: scale(1.1);
 }
+
 .project-github-link::after {
   content: "Github";
   display: none;
@@ -1047,6 +1053,7 @@ section {
   text-align: center;
   font-size: 12px;
 }
+
 .project-deployed-link::after {
   content: "Deployed";
   display: none;
@@ -1056,7 +1063,9 @@ section {
   text-align: center;
   font-size: 12px;
 }
-.project-github-link:hover::after, .project-deployed-link:hover::after{
+
+.project-github-link:hover::after,
+.project-deployed-link:hover::after {
   display: block;
 }
 
@@ -1389,6 +1398,19 @@ section {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  animation: floatUpDown 2s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .button-55:hover {
@@ -1442,9 +1464,10 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid #0563bb;
 }
 
-#download-resume{
+#download-resume {
   position: relative;
 }
+
 #download-resume[title]:hover::before {
   content: attr(title);
   color: #fff;

@@ -451,25 +451,7 @@
 <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 <script src="assets/vendor/php-email-form/validate.js"></script>
 <script src="assets/js/main.js"></script>
-<script>
-  (function (w, d, s, o, f, js, fjs) {
-    w["botsonic_widget"] = o;
-    w[o] =
-      w[o] ||
-      function () {
-        (w[o].q = w[o].q || []).push(arguments);
-      };
-    (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
-    js.id = o;
-    js.src = f;
-    js.async = 1;
-    fjs.parentNode.insertBefore(js, fjs);
-  })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
-  Botsonic("init", {
-    serviceBaseUrl: "https://api.botsonic.ai",
-    token: "c51e3861-f3de-4992-9bda-caebcadfa367",
-  });
-</script>
+
 <script>
   const techStackProficiency = [
     { name: "React.js", proficiency: 80, img: "assets/Logos/react-icon.svg" },
@@ -482,10 +464,12 @@
     { name: "Flutter (Dart)", proficiency: 70, img: "assets/Logos/flutter-icon.svg" },
     { name: "Tailwind CSS", proficiency: 90, img: "assets/Logos/tailwind-icon.svg" },
     { name: "MUI (Material-UI)", proficiency: 90, img: "assets/Logos/mui-icon.svg" },
-    { name: "Three.js", proficiency: 40, img: "assets/Logos/threejs-icon.svg" },
+    { name: "Three.js", proficiency: 30, img: "assets/Logos/threejs-icon.svg" },
     { name: "AWS (Lambda, S3, API Gateway, CloudFront, EC2)", proficiency: 40, img: "assets/Logos/aws-icon.svg" },
     { name: "Git", proficiency: 70, img: "assets/Logos/git-icon.svg" },
     { name: "CI/CD Pipelines", proficiency: 30, img: "assets/Logos/cicd-icon.svg" },
+    { name: "Java", proficiency: 50, img: "assets/Logos/java-icon.svg" },
+    { name: "Redux", proficiency: 80, img: "assets/Logos/redux-icon.svg" },
   ];
 
   const skillsContent = document.querySelector(".skills-content");

@@ -1,18 +1,18 @@
 .hoverable-card {
     overflow: hidden;
     position: relative;
-    transition: height 0.5s ease-in-out;
+    /* transition: height 0.5s ease-in-out; */
 }
 
 .project-card {
     height: 380px;
     border-radius: 7px;
     overflow: hidden;
-    border: 1px solid rgba(128, 128, 128, 0.3);
+    box-shadow: rgba(159, 159, 159, 0.2) 0px 8px 10px 0px;
 }
 
 .project-card:hover {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 8px 100px 0px;
+    box-shadow: rgba(109, 109, 109, 0.15) 0px 8px 100px 0px;
 }
 
 .carousel {
@@ -22,7 +22,6 @@
     height: auto;
     margin: auto;
     padding-bottom: 30px;
-    border-bottom: 3px solid #0563bb;
 }
 
 .carousel-slide img {
@@ -80,17 +79,18 @@
     background-color: white;
     transform: translateY(10px);
     padding-top: 20px;
-    transition: opacity 3s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 3s ease-in-out, transform 0.5s ease-in-out;    
+    border-top: 3px solid #0563bb;
 }
 
 .hoverable-card:hover .project-details {
-    border-top: 1px solid rgb(199, 199, 199);
     transform: translateY(-80%);
 }
 
 .project-description,
 .project-links {
     opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .hoverable-card:hover .project-description,
